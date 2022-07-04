@@ -23,6 +23,9 @@ public class QuotaChecker {
         //Quick detour for the bonus earners
         if(sales >= quota){
             System.out.println("Congrats! You've met your quota.");
+        }else{
+            int salesShort = quota - sales;
+            System.out.println("You did not make your quota. You were " + salesShort + " sales short.");
         }
 
     }
