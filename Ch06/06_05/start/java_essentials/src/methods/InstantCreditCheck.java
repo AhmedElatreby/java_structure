@@ -22,18 +22,18 @@ public class InstantCreditCheck {
         scanner.close();
 
         //Check if the user is qualified
-        isUserQualified(actualCreditScore, actualSalary);
+        boolean qualified = isUserQualified(actualCreditScore, actualSalary);
     }
 
-    public static void isUserQualified(int creditScore, double salary){
+    public static boolean isUserQualified(int creditScore, double salary){
         double requiredSalary = 25000;
         int requiredCreditScore = 700;
 
         if(creditScore >= requiredCreditScore && salary >= requiredSalary){
-            System.out.println("Congrats! You've been approved!");
+            return true;
         }
         else{
-            System.out.println("Sorry, you've been declined.");
+            return false;
         }
     }
 
