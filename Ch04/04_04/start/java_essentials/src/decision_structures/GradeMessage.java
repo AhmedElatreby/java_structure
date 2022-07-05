@@ -17,6 +17,30 @@ public class GradeMessage {
         scanner.close();
 
         String message;
+
+        switch (grade.toUpperCase()){
+            case "A":
+                message = "Excellent job!";
+                System.out.println(message);
+                break;
+            case "B":
+                message = "Great job!";
+                System.out.println(message);
+                break;
+            case "C":
+                message = "Good job!";
+                System.out.println(message);
+                break;
+            case "D":
+                message = "You need to work a bit harder";
+                System.out.println(message);
+                break;
+            case "F":
+                message = "Try harder next time";
+                System.out.println(message);
+                break;
+        }
+
     }
 }
 
