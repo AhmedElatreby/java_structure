@@ -39,6 +39,10 @@ public class GradeMessage {
                 message = "Try harder next time";
                 System.out.println(message);
                 break;
+            default:
+                message = "Error. Invalid grade";
+                System.out.println(message);
+                break;
         }
 
     }
