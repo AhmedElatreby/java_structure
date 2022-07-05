@@ -17,6 +17,27 @@ public class TestResults {
         scanner.close();
 
         //Determine the letter grade
+        char grade;
+        if (score < 60) {
+            grade = 'F' ;
+            System.out.println("Your grad is " + grade);
+        } else if (score < 70) {
+            grade = 'D';
+            System.out.println("Your grad is " + grade);
+
+        } else if (score < 80) {
+            grade = 'C';
+            System.out.println("Your grad is " + grade);
+
+        } else if (score < 90) {
+            grade = 'B';
+            System.out.println("Your grad is " + grade);
+
+        }else{
+            grade = 'A';
+            System.out.println("Your grad is " + grade);
+
+        }
 
     }
 }
